@@ -1,0 +1,112 @@
+<form
+  class="form w-100"
+  [formGroup]="mapForm"
+  novalidate
+  (ngSubmit)="showTopicsInMap()"
+>
+  <div>
+    <div class="row mb-2 ml-2">
+      <div class="col-md-3">
+        <label for="exampleFormControlInput1" class="required form-label"
+          >Topic</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          formControlName="topic"
+          placeholder="Topic"
+        />
+      </div>
+      <div class="col-md-7">
+        <label for="exampleFormControlInput1" class="required form-label"
+          >Address</label
+        >
+        <input
+          type="text"
+          [value]="address"
+          class="form-control"
+          formControlName="address"
+          placeholder="Address"
+        />
+      </div>
+      <div class="col-md-2">
+        <label for="exampleFormControlInput1" class="required form-label"
+          >Distance(In miles)</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          formControlName="distance"
+          placeholder="Distance"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+        <button class="btn btn-primary">Go</button>
+      </div>
+    </div>
+
+    <div *ngIf="mapForm.controls['topic'].invalid">
+      <div *ngIf="mapForm.controls['topic'].errors">
+        <br />
+        <span style="color: red; font-weight: bold"> Please enter topic</span>
+      </div>
+    </div>
+
+    <div
+      *ngIf="
+        mapForm.controls['address'].invalid && mapForm.controls['address'].dirty
+      "
+    >
+      <div *ngIf="mapForm.controls['address'].errors">
+        <br />
+        <span style="color: red; font-weight: bold"> Please enter address</span>
+      </div>
+    </div>
+
+    <div *ngIf="mapForm.controls['distance'].invalid">
+      <div *ngIf="mapForm.controls['distance'].errors">
+        <br />
+        <span style="color: red; font-weight: bold">
+          Please enter distance</span
+        >
+      </div>
+    </div>
+  </div>
+</form>
+<br />
+<div class="flex-container">
+  <div
+    class="flex-child magenta"
+    style="height: 420px; width: 100%; overflow-y: auto"
+  >
+  <span style="font-weight: bold;">Nearby Topics</span>
+  <br>
+  <span style="font-size: smaller">Please click on the item to see position on the map</span>
+  <br>
+    <ul class="list" >
+      <li class="item" *ngFor="let item of topicList;let i=index" (click)="topicClick(i)">
+         {{ item.name }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="flex-child green" >
+    <google-map  #map height="400px" width="750px" [center]="center" [zoom]="zoom">
+      <ng-container *ngFor="let elem of topicList">
+        <map-marker
+          #marker="mapMarker"
+          [position]="{ lat: elem.latitude, lng: elem.longitude }"
+          [options]="markerOptions"
+          (mapClick)="openInfoWindow(marker, infoWindow)"
+        ></map-marker>
+        <map-info-window #infoWindow="mapInfoWindow">
+           {{ elem.name }}</map-info-window
+        >
+      </ng-container>
+    </google-map>
+  </div>
+
+</div>
+

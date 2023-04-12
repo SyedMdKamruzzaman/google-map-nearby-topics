@@ -1,0 +1,2 @@
+{"Timestamp":"2023-04-12T10:57:42.2556333+06:00","Level":"Error","MessageTemplate":"Unexpected character encountered while parsing value: <. Path '', line 0, position 0."}
+{"Timestamp":"2023-04-12T11:00:18.8754740+06:00","Level":"Error","MessageTemplate":"Testing serilog"}
