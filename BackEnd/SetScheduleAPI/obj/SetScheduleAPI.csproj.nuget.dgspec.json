@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj": {}
+    "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj": {
+    "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj",
+        "projectUniqueName": "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj",
         "projectName": "SetScheduleAPI",
-        "projectPath": "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj",
+        "projectPath": "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj",
         "packagesPath": "C:\\Users\\syed.kamruzzaman\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\obj\\",
+        "outputPath": "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages"
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

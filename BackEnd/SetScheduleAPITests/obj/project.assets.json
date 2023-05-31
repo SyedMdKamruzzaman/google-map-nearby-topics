@@ -3746,11 +3746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPITests\\SetScheduleAPITests.csproj",
+      "projectUniqueName": "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPITests\\SetScheduleAPITests.csproj",
       "projectName": "SetScheduleAPITests",
-      "projectPath": "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPITests\\SetScheduleAPITests.csproj",
+      "projectPath": "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPITests\\SetScheduleAPITests.csproj",
       "packagesPath": "C:\\Users\\syed.kamruzzaman\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPITests\\obj\\",
+      "outputPath": "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPITests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages"
@@ -3772,8 +3772,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj": {
-              "projectPath": "D:\\Projects\\Personal\\20230412_final\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj"
+            "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj": {
+              "projectPath": "D:\\Projects\\Personal\\google-map-nearby-topics\\BackEnd\\SetScheduleAPI\\SetScheduleAPI.csproj"
             }
           }
         }
@@ -3825,7 +3825,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
